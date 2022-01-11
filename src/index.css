@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f5f8;
+  color: #222;
+}
+
+section {
+  max-width: 50%;
+  height: 550px;
+  display: flex;
+  margin: 4rem auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.review-heading {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(47, 79, 79);
+}
+
+hr {
+  display: block;
+  width: 7%;
+  padding: 0.2rem;
+  margin: 0 auto;
+  border: 0 none;
+  background-color: #4986e9;
+  opacity: 0.5;
+  border-width: 1px;
+}
+
+.content {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.image-container,
+.person-image {
+  position: relative;
+  border-radius: 50%;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1.5rem;
+}
+
+.person-image {
+  height: 170px;
+  width: 180px;
+  background-size: cover;
+}
+
+.person-image:before,
+.quote-icon {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #4986e9;
+  color: white;
+}
+
+.quote-icon {
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  transform: translateY(25%);
+}
+
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.person-name {
+  color: black;
+  padding: 2rem 0 0.1rem 2rem;
+  letter-spacing: 2px;
+}
+
+.person-skill {
+  color: #4986e9;
+  padding-left: 2rem;
+}
+
+.person-desc {
+  color: grey;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 5rem;
+  font-size: large;
+}
+
+.navigator {
+  display: inline;
+}
+
+.navigator i {
+  color: #4986e9;
+  font-size: 20px;
+  padding: 0 1rem;
+}
+
+.navigator button {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
